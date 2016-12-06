@@ -1,5 +1,16 @@
+//RewriteEngine on
+//RewriteCond %{REQUEST_FILENAME} !-d
+//RewriteCond %{REQUEST_FILENAME}\.html -f
+//RewriteRule ^(.*)$ $1.html
+// Replace html with your file extension, eg: php, htm, asp
+
+//Rewrite to www
+Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html
-# Replace html with your file extension, eg: php, htm, asp
+RewriteCond %{HTTP_HOST} ^jntukelearn.in[nc]
+RewriteRule ^(.*)$ http://www.jntukelearn.in/$1 [r=301,nc]
+
+//Caching schema
+<FilesMatch "\.(jpg|png|css|js)$">
+Header set Cache-Control "private, proxy-revalidate, max-age=72576000"
+</FilesMatch>
