@@ -16,7 +16,11 @@
     <!-- Slick slider -->
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">          
+    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">
+
+          <!--News Ticker-->
+       <link rel="stylesheet" href="scss/marquee.css" />
+		<link rel="stylesheet" href="scss/example.css" />        
 
     <!-- Main style sheet -->
     <link href="assets/css/style.css" rel="stylesheet">    
@@ -119,6 +123,7 @@
     </nav>
   </section>
   <!-- End menu -->
+
   <!-- Start search box -->
   <div id="mu-search">
     <div class="mu-search-area">      
@@ -135,6 +140,31 @@
     </div>
   </div>
   <!-- End search box -->
+  <div class="content">
+			<div class="simple-marquee-container">
+				
+				</div>
+				<div class="marquee">
+					<ul class="marquee-content-items">
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+					</ul>
+				</div>
+			</div>
+		</div>
   <!-- Start Slider -->
   <section id="mu-slider">
     <!-- Start single slider item -->
@@ -764,6 +794,15 @@
 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+  <!--News Ticker-->
+  <script type="text/javascript" src="assets/js/marquee.js"></script>
+  <script>
+			$(function (){
+
+				$('.simple-marquee-container').SimpleMarquee();
+				
+			});
+	</script>
 
   </body>
 </html>
