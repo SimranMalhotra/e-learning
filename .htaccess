@@ -1,0 +1,10 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^jntukelearn.in[nc]
+RewriteRule ^(.*)$ http://www.jntukelearn.in/$1 [r=301,nc]
+
+//Caching schema
+<FilesMatch "\.(jpg|png|css|js)$">
+Header set Cache-Control "private, proxy-revalidate, max-age=72576000"
+</FilesMatch>
