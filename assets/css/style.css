@@ -2058,7 +2058,7 @@ display: flex;
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a {
   color: #f9f9f9;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   padding: 5px 0 5px 15px;
   position: relative;
@@ -2132,6 +2132,7 @@ display: flex;
   color: #fff;
   margin-bottom: 0;
   letter-spacing: 0.3px;
+  font-size: 11px;
 }
 #mu-footer .mu-footer-bottom .mu-footer-bottom-area p a {
   color: #fff;
