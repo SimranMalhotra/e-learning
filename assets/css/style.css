@@ -1,36 +1,4 @@
-/*
-  Template Name: Varsity
-  Author : MarkUps
-  Author URI: http://www.markups.io/
-  Version: 1.0
-  Tags: light, white, education, online education, school, college, university multi page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
 
-*/
-
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER SECTION
-#NAVBAR SECTION
-#SLIDER SECTION
-#SERVICE SECTION
-#ABOUT US SECTION
-#COUNTER SECTION
-#FEATURES SECTION
-#LATEST COURSES SECTION
-#TEACHER SECTION
-#TESTIMONIAL SECTION
-#FROM BLOG SECTION
-# COURSES PAGE
-#BLOG PAGE
-#GALLERY PAGE
-#CONTACT PAGE
-#ERROR  PAGE
-#FOOTER SECTION
-#RESPONSIVE DESIGN
-*/
-
-/* BASE - Base tyles, Variables, Mixins, etc. */
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
