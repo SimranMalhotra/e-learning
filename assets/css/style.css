@@ -4,13 +4,12 @@ body {
   font-family: "Roboto", sans-serif;
   color: #333333;
   font-size: 16px;
-  overflow-x: hidden;
+  
 }
 
 .no-padding {
   padding: 0;
 }
-
 .no-border {
   border: none;
 }
