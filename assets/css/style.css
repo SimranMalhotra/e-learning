@@ -6,7 +6,41 @@ body {
   font-size: 16px;
   overflow-x: hidden;
 }
+/*************** Clients Carousel ***************/
 
+.partner {
+    padding-bottom: 60px;
+}
+
+.clients-carousel .client-item a {
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.clients-carousel .client-item a img {
+  -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.clients-carousel:hover .client-item a img {
+  opacity: 0.6;
+}
+
+.clients-carousel:hover .client-item a:hover img {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: none;
+  opacity: 1;
+}
 .no-padding {
   padding: 0;
 }
@@ -14,6 +48,114 @@ body {
   border: none;
 }
 
+
+/*************** Custom Carousel ***************/
+
+.custom-carousel .item {
+  padding-right: 20px;
+}
+
+.custom-carousel.show-one-slide .item {
+  padding-right: 0;
+}
+.touch-carousel .owl-controls .owl-buttons {
+  position: absolute;
+  top: -50px;
+  right: 2px;
+}
+
+.touch-carousel.projects-carousel .owl-controls .owl-buttons {
+  right: 12px;
+}
+
+.touch-carousel.navigation-2 .owl-controls .owl-buttons {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.touch-carousel.navigation-2.clients-carousel .owl-controls .owl-buttons {
+  top: -8px;
+}
+
+.touch-carousel.navigation-2 .owl-controls .owl-buttons div, .touch-carousel.navigation-3 .owl-controls .owl-buttons div{
+  background-color: #f2f2f2;
+}
+
+.touch-carousel.navigation-2 .owl-controls .owl-buttons div i, .touch-carousel.navigation-3 .owl-controls .owl-buttons div i{
+  color: #666;
+}
+
+.touch-carousel.navigation-3 {
+  padding-top: 45px;
+}
+
+.touch-carousel.navigation-3.clients-carousel {
+  padding-top: 25px;
+}
+
+.touch-carousel.navigation-3 .owl-controls .owl-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.touch-carousel.navigation-2 .owl-controls .owl-buttons div, .touch-carousel.navigation-3 .owl-controls .owl-buttons div {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.touch-carousel.navigation-3.projects-carousel .owl-controls .owl-buttons {
+  right: 9px;
+}
+
+.touch-carousel .owl-controls .owl-buttons div, .testimonials-carousel .owl-controls .owl-buttons div {
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-left: 4px;
+  transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    border: 1px solid #ccc;
+}
+
+.touch-carousel .owl-controls .owl-buttons div i, .testimonials-carousel .owl-controls .owl-buttons div i {
+  font-size: 1.2em;
+  color: #ccc;
+  transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.testimonials-carousel .owl-controls .owl-buttons div i {
+  color: #fff;
+}
+
+.touch-carousel .owl-controls.clickable .owl-buttons div:hover i {
+  color: #fff;
+}
+
+.testimonials-carousel .owl-controls.clickable .owl-buttons div:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
 /* MODULES - Individual site components */
 ul {
   padding: 0;

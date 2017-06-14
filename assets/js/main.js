@@ -24,3 +24,12 @@ jQuery(document).ready(function($){
 		});
 	}
 });
+$("#clients-carousel").owlCarousel({
+    items : 4,
+    itemsDesktop : [1000,4],
+    itemsDesktopSmall : [900,3],
+    itemsTablet: [600,2],
+    itemsMobile : false,
+    pagination: false,
+    autoPlay: 4000,  // here you can change carousel slide duration
+  });
