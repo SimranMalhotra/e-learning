@@ -314,7 +314,7 @@
     $.fn.SimpleMarquee.defaults = {
             property: 'value',
             onComplete: null,
-            duration: 40000,
+            duration: 75000,
             padding: 10,
             marquee_class: '.marquee',
             container_class: '.simple-marquee-container',
