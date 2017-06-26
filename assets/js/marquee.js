@@ -1,44 +1,4 @@
-// ---------------------------------
-// ---------- SimpleMarquee ----------
-// ---------------------------------
-//Copyright (C) 2016  Fabian Valle 
-//An easy to implement marquee plugin. I know its easy because even I can use it.
-//Forked from: https://github.com/conradfeyt/Simple-Marquee
-//Re-Written by: Fabian Valle (www.fabian-valle.com) (www.obliviocompany.com)
-// 
-// ------------------------
-// Structure //
-//
-//  *********************************** - marque-container - *************************************
-//  *                                                                                            *
-//  *   ******************************* ******************************************************   *
-//  *   *                             * *                                                    *   *
-//  *   * - marquee-content-sibling - * *                 - marquee-content -                *   *
-//  *   *                             * *                                                    *   *
-//  *   ******************************* ******************************************************   *
-//  *                                                                                            *
-//  **********************************************************************************************
-//
-//// Usage //
-//  
-//    Only need to call the createMarquee() function,
-//    if desired, pass through the following paramaters:
-//
-//    $1 duration:                   controls the speed at which the marquee moves
-//
-//    $2 padding:                    right margin between consecutive marquees. 
-//
-//    $3 marquee_class:             the actual div or span that will be used to create the marquee - 
-//                                   multiple marquee items may be created using this item's content. 
-//                                   This item will be removed from the dom
-//
-//    $4 container_class:           the container div in which the marquee content will animate. 
-//
-//    $5 marquee-content-sibling :   (optional argument) a sibling item to the marqueed item  that 
-//                                   affects the end point position and available space inside the 
-//                                   container. 
-//
-//    $6 hover:                     Boolean to indicate whether pause on hover should is required. 
+
 ;(function ($, window, document, undefined){
 	var pluginName = 'SimpleMarquee';
 
